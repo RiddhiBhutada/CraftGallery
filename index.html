@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craft Gallery</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/0ed55e770d.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<style>
+  #banner {
+    background-color: #126754;
+    height: calc(100vh - 110px);
+  }
+
+  #banner .container {
+    height: 100%;
+  }
+
+  #banner .row {
+    height: 100%;
+  }
+
+  .banner-text {
+    padding: 0px 45px;
+  }
+
+  .banner-text h1 {
+    font-size: 53px;
+    color: #a0e3d2;
+  }
+
+  .banner-text p {
+    font-size: 18px;
+    color: white;
+    margin: 35px 0;
+    /* text-align: justify; */
+  }
+
+  .banner-text a {
+    font-size: 18px;
+    color: #126754;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #126754;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+  }
+
+
+  #slider {
+    padding: 60px 0;
+  }
+
+  #slider .item {
+    margin: 20px;
+  }
+
+  #slider h1 {
+    color: #126754;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 20px 20px;
+  }
+
+  #slider h4 {
+    margin: 12px 0;
+  }
+
+  #slider p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #sticky-bg {
+    padding: 200px 0;
+    background-image: url(Frame\ 1\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+
+  #sticky-bg i {
+    font-size: 30px;
+  }
+
+  #crafter {
+    padding: 60px 0;
+  }
+
+  #crafter h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #126754;
+    margin-bottom: 20px;
+  }
+
+  #crafter .crafter-text {
+    padding: 0 50px;
+  }
+
+  #crafter p {
+    font-size: 18px;
+  }
+
+  /* ------------------------------------------------------------------------------------- */
+
+  @media (min-width: 1200px) and (max-width: 1400px) {
+
+    .banner-text h1 {
+      font-size: 50px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+    }
+  }
+
+  /* ------------------------------------------------------------------------------------- */
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .banner-text h1 {
+      font-size: 45px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+    }
+
+    #banner {
+      height: 100%;
+    }
+
+    .banner-text {
+      padding: 50px 10px;
+    }
+
+    #crafter .crafter-text {
+      padding: 50px 0px;
+    }
+  }
+
+  /* -------------------------------------------------------------------------------------- */
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .banner-img {
+      display: none;
+    }
+
+    .banner-text h1 {
+      font-size: 45px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+    }
+
+    #banner {
+      height: 100%;
+    }
+
+    .banner-text {
+      padding: 50px 10px;
+    }
+
+    #sticky-bg {
+      padding: 110px 0;
+    }
+
+    #crafter .crafter-text {
+      padding: 30px 0px;
+    }
+  }
+
+  /* --------------------------------------------------------------------------------------- */
+
+
+  @media (min-width: 577px) and (max-width: 767px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    .banner-img {
+      display: none;
+    }
+
+    .banner-text h1 {
+      font-size: 45px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+    }
+
+    #banner {
+      height: 100%;
+    }
+
+    .banner-text {
+      padding: 50px 10px;
+    }
+
+    #slider .item {
+      margin: 10px;
+    }
+
+    #sticky-bg {
+      padding: 110px 0;
+    }
+
+    #sticky-bg h1 {
+      font-size: 30px;
+    }
+
+    #sticky-bg i {
+      font-size: 25px;
+    }
+
+    #crafter .crafter-text {
+      padding: 30px 0px;
+    }
+  }
+
+  /* ----------------------------------------------------------------------------------- */
+
+  @media (min-width: 400px) and (max-width: 576px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    /* .banner-img {
+      display: none;
+    } */
+
+    #banner .row{
+      flex-direction: column-reverse;
+    }
+
+    .banner-text h1 {
+      font-size: 40px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+    }
+
+    #banner {
+      height: 100%;
+      padding: 30px 0 20px 0;
+    }
+
+    .banner-text {
+      padding: 30px 10px 50px 10px;
+    }
+
+    #slider .item {
+      margin: 10px;
+    }
+
+    #sticky-bg {
+      padding: 110px 0;
+    }
+
+    #sticky-bg h1 {
+      font-size: 30px;
+    }
+
+    #sticky-bg i {
+      font-size: 25px;
+    }
+
+    #crafter .crafter-text {
+      padding: 30px 0px;
+    }
+  }
+
+  /* --------------------------------------------------------------------------------- */
+  @media (min-width: 300px) and (max-width: 399px) {
+    body {
+      overflow-x: hidden;
+    }
+
+    /* .banner-img { */
+      /* display: none; */
+    /* } */
+
+    #banner .row{
+      flex-direction: column-reverse;
+    }
+
+    .banner-text h1 {
+      font-size: 30px;
+    }
+
+
+    .banner-text a {
+      display: block;
+      text-align: center;
+      margin: 15px 20px;
+    }
+
+    .banner-text p {
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    #banner {
+      height: 100%;
+      padding: 20px 0;
+    }
+
+    .banner-text {
+      padding: 20px 0px 30px 0px;
+    }
+
+    #slider .item {
+      margin: 0px;
+    }
+
+    #sticky-bg {
+      padding: 80px 0;
+    }
+
+    #sticky-bg h1 {
+      font-size: 30px;
+    }
+
+    #sticky-bg i {
+      font-size: 25px;
+    }
+
+    #crafter .crafter-text {
+      padding: 30px 0px;
+    }
+  }
+</style>
+
+<body>
+
+  <section id="navbar">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="logo1.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <section id="banner">
+    <div class="container">
+      <div class="row d-flex justify-centent-center align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="banner-text">
+            <h1>Finely Crafted Products Made By Sole Proprietors</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur iores! Quisquam dolore
+              perferendis blanditiis dolorum cum reprehenderit quia suscipit officia assumenda aperiam, alias ad, porro
+              nesciunt. Quibusdam vero obcaecati aliquid, deserunt assumenda ut eveniet ad consequatur eum?</p>
+            <a href="about.html">Know More</a>
+            <a href="products.html">See Products</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="banner-img text-center">
+            <img src="swati-h-das-qUznGGomUWY-unsplash.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="slider">
+    <div class="container">
+
+      <h1>Freshly Made <br> For You...</h1>
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="item text-center">
+          <img src="img1.jpg" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Rs. 350</p>
+        </div>
+
+        <div class="item text-center">
+          <img src="img2.jpg" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Rs. 350</p>
+        </div>
+
+        <div class="item text-center">
+          <img src="img3.jpg" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Rs. 350</p>
+        </div>
+
+        <div class="item text-center">
+          <img src="img4.jpg" alt="">
+          <h4>Lorem, ipsum dolor.</h4>
+          <p>Rs. 350</p>
+        </div>
+
+        <!-- <div class="item text-center">
+          <img src="img1.jpg" alt="">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Rs. 350</p>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sticky-bg">
+    <div class="container text-center">
+      <h1>
+        “Craft is passionately creating something with your hands.”
+      </h1>
+      <i>- Lorem Ipsum</i>
+    </div>
+  </section>
+
+
+  <section id="crafter">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-centent-center">
+        <div class="col-12 col-xl-6">
+          <img src="crafter2.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-12 col-xl-6">
+          <div class="crafter-text">
+            <h1>Meer Our <br> Crafters..</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Exercitationem, illum? ullam repellat laborum a sunt culpa nihil asperiores, aspernatur
+              autem quas, aliquid, itaque praesentium necessitatibus sint.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Beatae atque quasi iusto, sint delectus voluptate ratione incidunt enim illo natus?
+              obcaecati corporis maxime, architecto earum optio ea numquam velit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="logo">
+            <img src="logo1.png" alt="" class="img-fluid" height="150px" width="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium reprehenderit consectetur est
+              dolor recusandae qui eius maiores, fugiat vero enim nam esse eaque perspiciatis! Vel mollitia voluptatibus
+              est enim!</p>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4  text-center">
+          <div>
+            <h3>QUICK LINKS</h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4">
+          <div>
+            <h3>CONTACT DATAILS</h3>
+            <div class="">
+              <i class="fa-solid fa-house-chimney"></i>
+              <!-- <p></p> -->
+              <span>Address :</span>
+              <p>Appa Balwant Chowk, Pune</p>
+            </div>
+
+            <div class="">
+              <i class="fa-solid fa-phone"></i>
+              <span>Phone No :</span>
+              <p>+91 9876543210</p>
+            </div>
+
+            <div class="">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email :</span>
+              <p>CraftGallery@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

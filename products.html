@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/0ed55e770d.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  h4 {
+    transform: rotate(0deg);
+    margin: 11px;
+  }
+
+
+  .text {
+    text-align: justify;
+    font-size: 17px;
+    padding: 10px 10px 0px 0;
+  }
+
+  .price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #12675445;
+    border-radius: 5px;
+    margin: 0 85px;
+    padding: 5px 0;
+    color: #0d5041;
+  }
+
+  .card {
+    border: 3px solid #126754;
+    height: 100%;
+  }
+
+  .horizontal{
+    margin: 30px 0px;
+  }
+
+
+/* ------------------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1400px){
+
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+@media (min-width: 992px) and (max-width: 1199px){
+.price{
+  margin: 0 40px;
+}
+
+}
+
+/* --------------------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991px){
+  h4 {
+    transform: rotate(0deg);
+    margin: 0px 34px;
+}
+
+.price{
+  margin: 0 160px;
+}
+
+.cards{
+  margin: 10px 0;
+}
+
+}
+/* --------------------------------------------------------------------------------------- */
+
+@media (min-width: 577px) and (max-width: 767px){
+  h4 {
+    transform: rotate(0deg);
+    margin: 0px 34px;
+}
+
+.price{
+  margin: 0 100px;
+}
+
+.cards{
+  margin: 10px 0;
+}
+}
+/* --------------------------------------------------------------------------------- */
+
+@media (min-width: 400px) and (max-width: 576px){
+  h4 {
+    transform: rotate(0deg);
+    margin: 0px 18px;
+}
+
+.price{
+  margin: 0 80px;
+}
+
+.cards{
+  margin: 10px 0;
+}
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+@media (min-width: 300px) and (max-width: 399px){
+  h4 {
+    transform: rotate(0deg);
+    margin: 0px 13px;
+}
+
+.price{
+  margin: 0 50px;
+}
+
+.cards{
+  margin: 10px 0;
+}
+
+.text{
+  font-size: 14px;
+  padding: 0;
+}
+
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+</style>
+
+<body>
+
+  <section id="navbar">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="logo1.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <section id="subbanner">
+    <div class="container text-center">
+      <h2>Our Products</h2>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="row horizontal">
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (3).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni? ut.</p>
+
+                  <p class="price">Rs. 200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, possimus? sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ratione. adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row horizontal">
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (4).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni? ut.</p>
+
+                  <p class="price">Rs. 300</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (5).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, possimus? sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 600</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (6).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ratione. adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 450</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row horizontal">
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (7).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni? ut.</p>
+
+                  <p class="price">Rs. 650</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (8).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, possimus? sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 540</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (9).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ratione. adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 300</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row horizontal">
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (10).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni? ut.</p>
+
+                  <p class="price">Rs. 500</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, possimus? sit amet consectetur adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 700</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-12 col-lg-4 cards">
+          <div class="card">
+            <img src="Frame 2 (12).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-2">
+                  <h4>Lorem </h4>
+                </div>
+                <div class="col-10">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ratione. adipisicing elit. Mollitia quia amet ipsam
+                    veniam eligendi ut.</p>
+                  <p class="price">Rs. 350</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="logo">
+            <img src="logo1.png" alt="" class="img-fluid" height="150px" width="250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis praesentium reprehenderit consectetur est dolor recusandae qui eius maiores, fugiat vero enim nam esse eaque perspiciatis! Vel mollitia voluptatibus est enim!</p>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4  text-center">
+          <div>
+            <h3>QUICK LINKS</h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-4">
+          <div>
+            <h3>CONTACT DATAILS</h3>
+            <div class="">
+              <i class="fa-solid fa-house-chimney"></i>
+              <!-- <p></p> -->
+              <span>Address :</span>
+              <p>Appa Balwant Chowk, Pune</p>
+            </div>
+
+            <div class="">
+              <i class="fa-solid fa-phone"></i>
+              <span>Phone No :</span>
+              <p>+91 9876543210</p>
+            </div>
+
+            <div class="">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email :</span>
+              <p>CraftGallery@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
